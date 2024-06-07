@@ -1,28 +1,26 @@
-﻿namespace Xərclərin_analizi
+﻿using System.Numerics;
+
+namespace Xərclərin_analizi
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int[] food = new int[70];
-            int[] transportation = new int[70];
-            int[] education = new int[70];
-            int[] communication = new int[70];
-            int[] utility = new int[70];
-            int[] other = new int[70];
-            int week = 7;
-            int dayCount = 0;
-            float sum = 0;
+            double[,] food = new double[7, 10];
+            double[,] transportation = new double[7, 10];
+            double[,] education = new double[7, 10];
+            double[,] communication = new double[7, 10];
+            double[,] utility = new double[7, 10];
+            double[,] other = new double[7, 10];
             bool flag = true;
-            for (int i = 0; i < week; i++)
+            for (int day = 0; day < 7; day++)
             {
-                Console.Write("Heftenin gununu daxil edin: ");
-                dayCount = Convert.ToInt32(Console.ReadLine());
-                Console.Write($"{i + 1}. gun ucun xerc varmi(y/n): ");
-                char yesOrNo = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine($"Gun {day + 1}: ");
                 while (flag)
                 {
-
+                    Console.Write($"{day + 1}. gun ucun xerc varmi(y/n): ");
+                    char yesOrNo = Convert.ToChar(Console.ReadLine());
+                    int expenseCount = 0;
                     if (yesOrNo == 'y')
                     {
                         Console.WriteLine("Zehmet olmasa xercin novunu daxil edin: ");
@@ -37,33 +35,33 @@
                         float total = Convert.ToSingle(Console.ReadLine());
                         if (typeOfExpense == "Qida")
                         {
-                            food[i] += 1;
-                            sum += total;
+                            food[day, expenseCount] = total;
+
                         }
                         else if (typeOfExpense == "Neqliyyat")
                         {
-                            transportation[i] += 1;
-                            sum += total;
+                            transportation[day, expenseCount] = total;
+
                         }
                         else if (typeOfExpense == "Tehsil")
                         {
-                            education[i] += 1;
-                            sum += total;
+                            education[day, expenseCount] = total;
+
                         }
                         else if (typeOfExpense == "Kommunikasiya")
                         {
-                            communication[i] += 1;
-                            sum += total;
+                            communication[day, expenseCount] = total;
+
                         }
                         else if (typeOfExpense == "Kommunal")
                         {
-                            utility[i] += 1;
-                            sum += total;
+                            utility[day, expenseCount] = total;
+
                         }
                         else if (typeOfExpense == "Diger")
                         {
-                            other[i] += 1;
-                            sum += total;
+                            other[day, expenseCount] = total;
+
                         }
                         else
                         {
@@ -80,11 +78,56 @@
                     {
                         break;
                     }
+                    expenseCount++;
                 }
             }
+            double totalFood = SumArray(food);
+            double totalTransportation = SumArray(transportation);
+            double totaleducation = SumArray(education);
+            double totalCommunication = SumArray(communication);
+            double totalUtility = SumArray(utility);
+            double totalOther = SumArray(other);
 
-            Console.WriteLine($"Həftə ərzində toplam xərc: {sum} AZN");
-            // Console.WriteLine($"Ən çox hansı növ üçün xərc çəkilib və miqdarı {} and {}");
+            double totalExpenses = totalFood + totalTransportation + totaleducation + totalCommunication + totalUtility + totalOther;
+            double[] totals = { totalFood, totalTransportation, totaleducation, totalCommunication, totalUtility, totalOther };
+            string[] totalsName = { "Qida", "Neqliyyat", "Tehsil", "Kommunikasiya", "Kommunal", "Diger" };
+
+            double maxPayout = totals[0];
+            double minPayout = totals[0];
+
+            string maxPayoutType = totalsName[0];
+            string minPayoutType = totalsName[0];
+
+
+            for (int i = 1; i < totals.Length; i++)
+            {
+                if (totals[i] > maxPayout)
+                {
+                    maxPayout = totals[i];
+                    maxPayoutType = totalsName[i];
+                }
+                else if (totals[i] < minPayout)
+                {
+                    minPayout = totals[i];
+                    minPayoutType = totalsName[i];
+                }
+            }
+            double average = totalExpenses / 7;
+            Console.WriteLine($"Həftə ərzində toplam xərc: {totalExpenses}");
+            Console.WriteLine($"Ən çox hansı növ üçün xərc çəkilib: '{maxPayoutType}'  və miqdarı: {maxPayout}");
+            Console.WriteLine($"Ən az hansı növ üçün xərc çəkilib: '{minPayoutType}'  və miqdarı: {minPayout}");
+            Console.WriteLine($"Günlük ortalama xərc: {average}");
+
+
+        }
+        static double SumArray(double[,] array)
+        {
+            double sum = 0;
+            foreach (double value in array)
+            {
+                sum += value;
+            }
+            return sum;
         }
     }
 }

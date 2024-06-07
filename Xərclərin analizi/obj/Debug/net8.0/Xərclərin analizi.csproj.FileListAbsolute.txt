@@ -12,3 +12,18 @@ C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin ana
 C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.pdb
 C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.genruntimeconfig.cache
 C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\ref\Xərclərin analizi.dll
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.sourcelink.json
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.dll
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\refint\Xərclərin analizi.dll
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.pdb
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\bin\Debug\net8.0\Xərclərin analizi.exe
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\bin\Debug\net8.0\Xərclərin analizi.deps.json
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\bin\Debug\net8.0\Xərclərin analizi.runtimeconfig.json
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\bin\Debug\net8.0\Xərclərin analizi.dll
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\bin\Debug\net8.0\Xərclərin analizi.pdb
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\Xərclərin analizi.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Programing2\HomeTask6\Xərclərin analizi\Xərclərin analizi\obj\Debug\net8.0\ref\Xərclərin analizi.dll

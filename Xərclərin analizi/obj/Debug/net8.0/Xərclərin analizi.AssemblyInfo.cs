@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Xərclərin analizi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e171746bebbaa73147a8398e2807567c0060add7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Xərclərin analizi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Xərclərin analizi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
